@@ -11,7 +11,8 @@ public class Sum_Of_Zeroes {
     }
 
     public static Integer coverageOfMatrix(ArrayList<ArrayList<Integer>> mat) {
-        int r = mat.size(), c = mat.getFirst().size(), sum = 0;
+        int r = mat.size(), c = mat.get(0).size();
+		Integer sum = 0;
         for (int i = 0; i < r; i++) {
             for (int j = 0; j < c; j++) {
                 if (mat.get(i).get(j) == 0) {
